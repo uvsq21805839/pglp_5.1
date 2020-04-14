@@ -1,4 +1,4 @@
-package pglp_5.pglp_5;
+package pglp_5.pglp_5_personnel;
 
 /**
  * Hello world!
