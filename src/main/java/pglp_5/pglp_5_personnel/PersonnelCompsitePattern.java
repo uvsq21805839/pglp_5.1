@@ -54,4 +54,7 @@ implements Annu, Iterable<Annu>,Serializable {
 		// TODO Auto-generated method stub
 		
 	}
+	public void reset() {
+        personnels.clear();
+    }
 }

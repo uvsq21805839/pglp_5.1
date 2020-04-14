@@ -23,8 +23,8 @@ public final class Personnel implements Annu, Serializable{
 	    }
 	    
 	private final ArrayList<Integer> numTelephone;
-	public ArrayList<String> getNumeroTelephone() {
-        return (ArrayList<String>) numTelephone.clone();
+	public ArrayList<Integer> getNumTelephone() {
+        return (ArrayList<Integer>) numTelephone.clone();
     }
 	  private final int id;
 	     public int getId() {

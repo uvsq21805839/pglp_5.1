@@ -1,7 +1,5 @@
 package pglp_5.pglp_5_personnel;
 
-
-
 import java.io.Serializable;
 import java.util.ArrayDeque;
 import java.util.Iterator;
