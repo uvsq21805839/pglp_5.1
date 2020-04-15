@@ -2,7 +2,6 @@ package pglp_5.pglp_5_personnel;
 
 import java.util.ArrayList;
 import java.io.Serializable;
-import java.time.LocalDate;
 
 public final class Personnel implements Annu, Serializable{
 	/**
@@ -22,9 +21,10 @@ public final class Personnel implements Annu, Serializable{
 	        return dateNaissance;
 	    }
 	    
-	private final ArrayList<Integer> numTelephone;
-	public ArrayList<Integer> getNumTelephone() {
-        return (ArrayList<Integer>) numTelephone.clone();
+	private final ArrayList<String> numTelephone;
+	@SuppressWarnings("unchecked")
+	public ArrayList<String> getNumTelephone() {
+        return (ArrayList<String>) numTelephone.clone();
     }
 	  private final int id;
 	     public int getId() {
@@ -35,7 +35,7 @@ public final class Personnel implements Annu, Serializable{
 		private final String  nom;
 		private final String prenom;
 		private final java.time.LocalDate dateNaissance;
-		private ArrayList<Integer> numTelephone;
+		private ArrayList<String> numTelephone;
 		 private static int idNext = 1;
 	       private final int id;
 		
@@ -43,11 +43,11 @@ public final class Personnel implements Annu, Serializable{
 			this.nom = nom;
 			this.prenom = prenom;
 			this.dateNaissance = dateNaissance;
-			this.numTelephone = new ArrayList<Integer>();
+			this.numTelephone = new ArrayList<String>();
 			this.id=idNext+1;
 		}
 		
-		public Builder numeroTelephone(final  ArrayList<Integer> numTelephone) {
+		public Builder numeroTelephone(final  ArrayList<String> numTelephone) {
 			this.numTelephone = numTelephone;
 			return this;
 		}
@@ -68,7 +68,7 @@ public final class Personnel implements Annu, Serializable{
 		System.out.print(prenom + " " + nom
 			+ ", naissance : " + dateNaissance
 			+ ", numéros de téléphone : ");
-		for (Integer i : numTelephone) {
+		for (String i : numTelephone) {
 			System.out.print(i + "  ");
 		}
 		
@@ -77,5 +77,5 @@ public final class Personnel implements Annu, Serializable{
 		// TODO Auto-generated method stub
 		
 	}
-
+	
 }

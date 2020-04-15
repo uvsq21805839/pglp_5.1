@@ -58,11 +58,11 @@ public class PersonnelDao implements Dao<Personnel>, Serializable {
 	            } else {
 	                dateNaissance = object.getDateNaissance();
 	            }
-	            ArrayList<Integer> numTelephone; 
+	            ArrayList<String> numTelephone; 
 	            if (params.containsKey("numTelephone")) {
-	                ArrayList<Integer> tmp;
-	                tmp = (ArrayList<Integer>) params.get("numTelephone");
-	                numTelephone = (ArrayList<Integer>) tmp.clone();
+	                ArrayList<String> tmp;
+	                tmp = (ArrayList<String>) params.get("numTelephone");
+	                numTelephone = (ArrayList<String>) tmp.clone();
 	            } else {
 	            	numTelephone = object.getNumTelephone();
 	            }
