@@ -16,7 +16,7 @@ import pglp_5.pglp_5_personnel.PersonnelCompsitePattern;
 public class PersonnelCompsitePatternTest {
 	
 	public void testConstructeur() {
-		PersonnelCompsitePattern x = new PersonnelCompsitePattern();
+		PersonnelCompsitePattern x = new PersonnelCompsitePattern(); 
 		Iterator<Annu> ip = x.iterator();
 		assertFalse(ip.hasNext());
 	}

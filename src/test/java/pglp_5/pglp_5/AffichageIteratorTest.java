@@ -17,7 +17,7 @@ import pglp_5.pglp_5_personnel.PersonnelCompsitePattern;
 
 public class AffichageIteratorTest {
 
-	@Test
+	@Test 
 	public void test() {
 		PersonnelCompsitePattern c1 = new PersonnelCompsitePattern();
 		PersonnelCompsitePattern c2 = new PersonnelCompsitePattern();
@@ -26,16 +26,11 @@ public class AffichageIteratorTest {
     	PersonnelCompsitePattern c5 = new PersonnelCompsitePattern();
     	PersonnelCompsitePattern c6 = new PersonnelCompsitePattern();
     	PersonnelCompsitePattern c7 = new PersonnelCompsitePattern();
-    	ArrayList<String> numero = new ArrayList<String>();
-    	numero.add("07.51.07.80.00");
-    	numero.add("07.51.07.80.00");
-    	numero.add("07.51.07.80.70");
-    	numero.add("07.51.07.80.10");
-    	numero.add("07.51.07.80.20");
+    
     	 @SuppressWarnings("unused")
-		Personnel p = new Personnel.Builder("Sekou", "Diawara", LocalDate.of(1991, 9, 12)).build();
+		Personnel p = new Personnel.Builder("Sekou", "Diawara", LocalDate.of(1991, 9, 12),"07 51 07 80 00").build();
     	 @SuppressWarnings("unused")
-		Personnel p1 = new Personnel.Builder("Mamby", "Diawara", LocalDate.of(1989, 11, 14)).build();
+		Personnel p1 = new Personnel.Builder("Mamby", "Diawara", LocalDate.of(1989, 11, 14),"09 51 07 80 00").build();
         c4.add(c6);
         c4.add(c7);
         c3.add(c4);

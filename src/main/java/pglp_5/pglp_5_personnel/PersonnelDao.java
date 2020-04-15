@@ -13,11 +13,11 @@ public class PersonnelDao implements Dao<Personnel>, Serializable {
 	private static final long serialVersionUID = 8471981916494119888L;
 	private ArrayList<Personnel> list;
 	public PersonnelDao() {
-		list = new ArrayList<Personnel>();
+		list = new ArrayList<Personnel>(); 
 	}
 
 	public void add(Personnel object) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub 
 		list.add(object);
 		}
 
@@ -58,20 +58,19 @@ public class PersonnelDao implements Dao<Personnel>, Serializable {
 	            } else {
 	                dateNaissance = object.getDateNaissance();
 	            }
-	            ArrayList<String> numTelephone; 
+	            String numTelephone = ""; 
 	            if (params.containsKey("numTelephone")) {
-	                ArrayList<String> tmp;
-	                tmp = (ArrayList<String>) params.get("numTelephone");
-	                numTelephone = (ArrayList<String>) tmp.clone();
+	            	numTelephone= (String)  params.get("numTelephone");
+	               
 	            } else {
 	            	numTelephone = object.getNumTelephone();
 	            }
 	            Personnel x = new Personnel.Builder(
-	                nom, prenom, dateNaissance).build();
+	                nom, prenom, dateNaissance,numTelephone).build();
 	            list.add(x);
 	        }
 	}
-
+ 
 	public void remove(Personnel object) {
 		// TODO Auto-generated method stub
 		 list.remove(object);
