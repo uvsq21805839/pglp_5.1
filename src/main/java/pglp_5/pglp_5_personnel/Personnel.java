@@ -44,12 +44,8 @@ public final class Personnel implements Annu, Serializable{
 			this.prenom = prenom; 
 			this.dateNaissance = dateNaissance;
 			this.numTelephone = numTelephone;
-			this.id=idNext+1;
-		/*} 
+			this.id=idNext+1; 
 		
-		public Builder numTelephone(final  ArrayList<String> numTelephone) {
-			this.numTelephone = numTelephone;
-			return this;*/
 		}
 		
 		public Personnel build() {
@@ -66,7 +62,7 @@ public final class Personnel implements Annu, Serializable{
 	 
 	}
 	public void print() {
-		//System.out.print(prenom + " " + nom	+ ", naissance : " + dateNaissance);
+		
 		System.out.print(prenom + " " + nom	+" , naissance : " + dateNaissance + ", Numero de Telephone : " +  numTelephone );
 	
 		
